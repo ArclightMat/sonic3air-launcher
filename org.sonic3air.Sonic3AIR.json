@@ -60,7 +60,7 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://sonic3air.org/sonic3air_game.tar.gz",
+                    "url" : "https://github.com/Eukaryot/sonic3air/releases/download/v22.09.10.0-stable/sonic3air_game.tar.gz",
                     "sha256" : "2c052dbd4e823a9700ac700f0fcf3deca943effd06004c52363844b5b0409634"
                 },
                 {
