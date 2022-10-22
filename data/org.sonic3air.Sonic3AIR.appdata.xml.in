@@ -24,6 +24,186 @@
   <project_license>GPL-3.0-only</project_license>
   <developer_name>Eukaryot</developer_name>
   <releases>
+    <release type="stable" date="2022-09-10" urgency="medium" version="v22.09.10.0">
+      <description>
+        <p>New features and options:</p>
+        <ul>
+          <li>Added a reduced version of the Options menu to the in-game Pause screen</li>
+          <li>Replaced the static main menu background with an animated (and moddable) one</li>
+          <li>Added an update check to the Options menu</li>
+          <li>Added option for maintaining shields between zones</li>
+          <li>Added option for using the Prototype Knuckles' Theme in the Hidden Palace fight against him</li>
+          <li>Added an option to activate Hyper Dash only if pressing any direction, like it's done in Origins</li>
+          <li>Added different Super Sonic Jump Ability options</li>
+          <li>Added option to make monitors fall down when hit from below</li>
+          <li>Added option to choose between main boss or mini-boss music for the FBZ 2 mid-boss / laser trap</li>
+          <li>For the highest anti-flicker setting, reduced intensities of Hyper Sonic screen flash and screen shake effects</li>
+          <li>Sound Test in Options menu now shows a proper name for each music track as well</li>
+          <li>Added DDZ to Act Select after reaching it in a normal game</li>
+          <li>Support for extended camera &amp; camera outrun options in Time Attack</li>
+        </ul>
+        <p>Bug fixes:</p>
+        <ul>
+          <li>Fix for a crash that can occur when entering the Options menu with certain controllers attached</li>
+          <li>Fixed that audio mods used reverse mod priority</li>
+          <li>Fix for positioning of Death Egg in SSZ end cutscene, which didn't work in all level layout settings</li>
+          <li>Fixed a S3AIR-specific collision bug for the MGZ spinning top</li>
+          <li>Also enabled several other glitch fixes previously prepared, like the "frame-perfect reset" bug</li>
+          <li>Fixes for Knuckles outro</li>
+          <li>Fix for a bug in Data Select when left + right is pressed at the same time</li>
+          <li>Fix for a bug that caused some keys on the keyboard to be mapped incorrectly</li>
+          <li>Fixed a possible soft-lock when using a bubble bounce to get on a MGZ spinning top</li>
+          <li>Fixed that infinite lives setting reset your life counter of save games back to 3</li>
+          <li>Fixed that in Time Attack or with Infinite Lives option, there was no ring sound for collecting a ring (or monitor) right when reaching 100, 200, etc. rings</li>
+          <li>Fixed that drop dash did not work on certain badniks (like Jaws, Blastoid, Mushmeanie)</li>
+          <li>Using the original emulated S&amp;K credits medley now instead of the remastered on if emulated soundtrack is chosen (this ensures that the medley also works if no remastered soundtrack files are even available)</li>
+          <li>Fixed "Value stack error: Too many elements" that could come up when Knuckles' fight against Super Mecha Sonic took very long</li>
+          <li>Fix for wrong palette usage in LBZ 1 boss flash</li>
+          <li>Fixed a glitch when character gets hurt while triggering a SSZ teleporter</li>
+          <li>Fix for wrong animation sprite when Knuckles loses his super form while climbing</li>
+          <li>Fixed that pressing Accept and Back at the same time in main menu could mess up the menu</li>
+          <li>Fixed palette errors from the original game in some places</li>
+          <li>Enforcing a fixed simulation update rate of 60 Hz in Time Attack</li>
+          <li>Off-screen tails display for player 2 now correctly renders his tails as well</li>
+          <li>Fixes in the "Score Millionaire" achievement image</li>
+          <li>Fix for PS4 controller LED color when playing as Sonic &amp; Tails</li>
+          <li>Removed the unnecessary "Back" buttons between mods in the mods options</li>
+          <li>Several fixes in scripts and documentation - thanks especially to Veenee, Lave slime and Dynamic Lemons</li>
+          <li>Plus a whole bunch of minor other fixes</li>
+
+        </ul>
+        <p>Other improvements:</p>
+        <ul>
+          <li>Performance improvement to rendering in Blue Spheres stages</li>
+          <li>Optimizations for script loading speeds, e.g. when switching mods</li>
+          <li>Improved on the reliability of triggering Tails Assist</li>
+          <li>Small tweaks to make sure AI Tails drops out of his flight after respawn more consistently, when he's close to the player</li>
+          <li>AI Tails does not consume the bouncepads in the Gumball Machine bonus stage any more</li>
+          <li>Removed fast music track versions in options menu's sound test, unless dev mode is active</li>
+          <li>Better OpenGL compatibility checks, to avoid startup crashes on some machines that require fail-safe mode</li>
+          <li>Better support for high-DPI display scaling under Windows</li>
+          <li>Test for possible fix to save data folder visibilty under Android 11 and higher</li>
+        </ul>
+        <p>Modding:</p>
+        <ul>
+          <li>A lot of script code improvements</li>
+          <li>More sprites added for modding (see "doc/modding/sprites")</li>
+          <li>Better support for strings in scripts (requires script feature level 2)</li>
+          <li>Added "Renderer.drawText" script function for easy text rendering</li>
+          <li>Added support for modded fonts</li>
+          <li>Added a better way of defining constants in scripts by using the "constant" keyword</li>
+          <li>Support for constant arrays in scripts</li>
+          <li>Added dynamic icons for input buttons like "@input_icon_button_A"</li>
+          <li>Added support for underwater Super/Hyper palettes</li>
+          <li>Added "Audio.getAudioKeyType" script function</li>
+          <li>New script functions for mod interoperability: "System.callFunctionByName", "System.getGlobalVariableValueByName", "System.setGlobalVariableValueByName"</li>
+          <li>Support for constant array definitions in a single line</li>
+          <li>Fixed that something like "stringformat("%02d", 0)" did only output a single 0</li>
+          <li>Now silently ignoring multiple includes of the same file in lemonscript</li>
+          <li>Integration of the Sonic Hacking Contest splash screen</li>
+        </ul>
+      </description>
+    </release>
+    <release type="development" date="2022-08-27" urgency="medium" version="v22.08.27.0">
+      <description>
+        <p>New features and options:</p>
+        <ul>
+          <li>Added DDZ to Act Select after reaching it in a normal game</li>
+          <li>Added an option to activate Hyper Dash only if pressing any direction, like it's done in Origins</li>
+          <li>Added different Super Sonic Jump Ability options</li>
+          <li>Added option to make monitors fall down when hit from below</li>
+          <li>Added option to choose between main boss or mini-boss music for the FBZ 2 mid-boss / laser trap</li>
+          <li>Debug Mode can now be toggled in the in-game Options as well</li>
+        </ul>
+        <p>Bug fixes:</p>
+        <ul>
+          <li>Fixed a S3AIR-specific collision bug for the MGZ spinning top</li>
+          <li>Also enabled several other glitch fixes previously prepared, like the "frame-perfect reset" bug</li>
+          <li> Fixes for Knuckles outro</li>
+          <li>Fix for broken music fade from title screen to main menu, a regression in the last preview</li>
+          <li>Fix for a bug that caused some keys on the keyboard to be mapped incorrectly</li>
+          <li>Fixed a possible soft-lock when using a bubble bounce to get on a MGZ spinning top</li>
+          <li>Fixed that infinite lives setting reset your life counter of save games back to 3</li>
+          <li>Fixed that in Time Attack or with Infinite Lives option, there was no ring sound for collecting a ring (or monitor) right when reaching 100, 200, etc. rings</li>
+          <li>Using the original emulated S&amp;K credits medley now instead of the remastered on if emulated soundtrack is chosen (this ensures that the medley also works if no remastered soundtrack files are even available)</li>
+          <li>Fixed "Value stack error: Too many elements" that could come up when Knuckles' fight against Super Mecha Sonic took very long</li>
+          <li>Fixed a glitch when character gets hurt while triggering a SSZ teleporter</li>
+          <li>Fix for wrong palette usage in LBZ 1 boss flash</li>
+          <li>Fixed a crash in the script compiler when loading certain script mods</li>
+          <li>Fixed that pressing Accept and Back at the same time in main menu could mess up the menu</li>
+          <li>Plus a whole bunch of minor other fixes</li>
+        </ul>
+        <p>Other improvements:</p>
+        <ul>
+          <li>>Performance improvement to rendering in Blue Spheres stages</li>
+          <li>Improved on the reliability of triggering Tails Assist</li>
+          <li>Small tweaks to make sure AI Tails drops out of his flight after respawn more consistently, when he's close to the player</li>
+          <li>AI Tails does not consume the bouncepads in the Gumball Machine bonus stage any more</li>
+          <li>Removed fast music track versions in options menu's sound test, unless dev mode is active</li>
+          <li>Better OpenGL compatibility checks, to avoid startup crashes on some machines that require fail-safe mode</li>
+          <li>Better support for high-DPI display scaling under Windows</li>
+          <li>Test for possible fix to save data folder visibilty under Android 11 and higher</li>
+        </ul>
+        <p>Modding:</p>
+        <ul>
+          <li>>A lot of script code improvements</li>
+          <li>More sprites added for modding (see "doc/modding/sprites")</li>
+          <li>Added support for modded fonts</li>
+          <li>Added dynamic icons for input buttons like "@input_icon_button_A"</li>
+          <li>Added support for underwater Super/Hyper palettes</li>
+          <li>Added "Audio.getAudioKeyType" script function</li>
+          <li>Support for constant array definitions in a single line</li>
+          <li>Now silently ignoring multiple includes of the same file in lemonscript</li>
+          <li>Integration of the Sonic Hacking Contest splash screen</li>
+        </ul>
+      </description>
+    </release>
+    <release type="development" date="2022-05-15" urgency="medium" version="v22.05.15.0">
+      <description>
+        <p>New features and options:</p>
+        <ul>
+          <li>Added a reduced version of the Options menu to the in-game Pause screen</li>
+          <li>Replaced the static main menu background with an animated (and moddable) one</li>
+          <li>Added an update check to the Options menu</li>
+          <li>Added option for maintaining shields between zones</li>
+          <li>Added option for using the Prototype Knuckles' Theme in the Hidden Palace fight against him</li>
+          <li>For the highest anti-flicker setting, reduced intensities of Hyper Sonic screen flash and screen shake effects</li>
+          <li>Sound Test in Options menu now shows a proper name for each music track as well</li>
+          <li>Support for extended camera &amp; camera outrun options in Time Attack</li>
+        </ul>
+        <p>Bug fixes:</p>
+        <ul>
+          <li>Fix for a crash that can occur when entering the Options menu with certain controllers attached</li>
+          <li>Fixed that audio mods used reverse mod priority</li>
+          <li>Fix for positioning of Death Egg in SSZ end cutscene, which didn't work in all level layout settings</li>
+          <li>Fix for a bug in Data Select when left + right is pressed at the same time</li>
+          <li>Enforcing a fixed simulation update rate of 60 Hz in Time Attack</li>
+          <li>Fixed that drop dash did not work on certain badniks (like Jaws, Blastoid, Mushmeanie)</li>
+          <li>Fixed palette errors from the original game in some places</li>
+          <li>Fix for wrong animation sprite when Knuckles loses his super form while climbing</li>
+          <li>Several fixes in scripts and documentation - thanks especially to Veenee, Lave slime and Dynamic Lemons</li>
+          <li>Off-screen tails display for player 2 now correctly renders his tails as well</li>
+          <li>Fix for Sonic's broken finger in "Score Millionaire" achievement image</li>
+          <li>Fix for PS4 controller LED color when playing as Sonic &amp; Tails</li>
+          <li>Removed the unnecessary "Back" buttons between mods in the mods options</li>
+        </ul>
+        <p>Other improvements:</p>
+        <ul>
+          <li>Optimizations for script loading speeds, e.g. when switching mods</li>
+          <li>Smaller performance optimizations for rendering</li>
+        </ul>
+        <p>Modding:</p>
+        <ul>
+          <li>Added "Renderer.drawText" script function for easy text rendering</li>
+          <li>Added a better way of defining constants in scripts by using the "constant" keyword</li>
+          <li>Better support for strings in scripts (requires script feature level 2)</li>
+          <li>Support for constant arrays in scripts</li>
+          <li>New script functions for mod interoperability: "System.callFunctionByName", "System.getGlobalVariableValueByName", "System.setGlobalVariableValueByName"</li>
+          <li>Fixed that something like "stringformat("%02d", 0)" did only output a single 0</li>
+          <li>And some more, see the Oxygen Handbook PDF</li>
+        </ul>
+      </description>
+    </release>
     <release type="stable" date="2021-09-28" urgency="medium" version="v21.09.28.0">
       <description>
         <ul>

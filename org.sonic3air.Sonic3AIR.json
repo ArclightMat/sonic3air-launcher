@@ -61,7 +61,7 @@
                 {
                     "type" : "archive",
                     "url" : "https://sonic3air.org/sonic3air_game.tar.gz",
-                    "sha256" : "4fda6c6b10399f62dfa61c329114e6cf866688e2ff9f68ac7b72ca2da38022fd"
+                    "sha256" : "2c052dbd4e823a9700ac700f0fcf3deca943effd06004c52363844b5b0409634"
                 },
                 {
                     "type" : "script",
