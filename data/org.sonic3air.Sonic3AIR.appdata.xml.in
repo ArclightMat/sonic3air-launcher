@@ -83,7 +83,7 @@
           <li>Replaced "Debug.drawRect" with "Renderer.drawRect", introducing a few more parameters like render queue</li>
           <li>Using the same reset behavior for "Renderer.drawText" and "Renderer.drawRect" as for sprites, so they don't disappear during fades any more</li>
           <li>Added a new way of rendering sprites in script ("Renderer.addSpriteHandle" and the various SpriteHandle methods)</li>
-          <li>Also for sprite rendering, added several blend modes and more flexible support for tint & added colors</li>
+          <li>Also for sprite rendering, added several blend modes and more flexible support for tint &amp; added colors</li>
           <li>Support for L + R shoulder buttons, if the mod.json unlocks it</li>
           <li>Support for defining required mods and recommended order of mods (see "doc/Modding.pdf" for details)</li>
           <li>Added "UniqueID" mod.json property</li>
