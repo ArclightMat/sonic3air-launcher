@@ -19,6 +19,7 @@ configure_file(
 add_project_arguments([
   '-I' + meson.build_root(),
 ], language: 'c')
+add_project_arguments('-Wno-deprecated-declarations', language : 'c')
 
 subdir('data')
 subdir('src')

@@ -1,7 +1,7 @@
 {
     "app-id" : "org.sonic3air.Sonic3AIR",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "master",
+    "runtime-version" : "46",
     "sdk" : "org.gnome.Sdk",
     "command" : "sonic3air",
     "finish-args" : [
@@ -79,6 +79,7 @@
             "sources" : [
                 {
                     "type" : "git",
+                    "branch": "main",
                     "url" : "https://github.com/ArclightMat/sonic3air-launcher.git"
                 }
             ]
