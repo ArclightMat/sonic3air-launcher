@@ -98,7 +98,7 @@ main (int   argc,
 
   gst_init (&argc, &argv);
 
-  app = gtk_application_new ("org.sonic3air.Sonic3AIR", G_APPLICATION_DEFAULT_FLAGS);
+  app = gtk_application_new ("org.sonic3air.Sonic3AIR", G_APPLICATION_FLAGS_NONE);
 
   g_signal_connect (app, "startup", G_CALLBACK (on_startup), NULL);
   g_signal_connect (app, "activate", G_CALLBACK (on_activate), NULL);
