@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
   <id>org.sonic3air.Sonic3AIR</id>
-  <name>Sonic 3: Angel Island Revisited</name>
+  <name>Sonic 3: A.I.R</name>
   <metadata_license>CC0-1.0</metadata_license>
-  <summary>A fan-made widescreen remaster of Sonic 3 &amp; Knuckles.</summary>
+  <summary>Fan-made remaster of Sonic 3&amp;K</summary>
   <description>
     <p>Dr. Eggman’s (AKA Dr. Robotnik’s) Death Egg was once again blasted by Sonic, crash-landing on the peak of a volcano on the Floating Island.</p>
     <p>Dr. Eggman is still at large, and Sonic can’t allow him to get his hands on the Master Emerald and repair the Death Egg. Sonic must also keep Knuckles off his back but Knuckles has problems too. As guardian of the Floating Island and all the Emeralds, Knuckles must do his part to keep the island safe. While they’re going the rounds with each other, who will stop Dr. Eggman?</p>
@@ -22,9 +22,11 @@
   </screenshots>
   <launchable type="desktop-id">org.sonic3air.Sonic3AIR.desktop</launchable>
   <project_license>GPL-3.0-only</project_license>
-  <developer_name>Eukaryot</developer_name>
+  <developer id="org.sonic3air">
+    <name>Eukaryot</name>
+  </developer>
   <releases>
-    <release type="stable" date="2024-02-01" urgency="medium" version="v22.02.02.0">
+    <release type="stable" date="2024-02-01" urgency="medium" version="v24.02.02.0">
       <description>
         <p>New features and improvements</p>
         <ul>
